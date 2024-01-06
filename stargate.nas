@@ -22,5 +22,5 @@
 	quit
 	
 #update
-	cmd OsUploadScript https://mario-texpack.tycho10101.repl.co/stargate.nas
+	cmd OsUploadScript https://tycho10101.github.io/Assets/stargate.nas
 	quit 

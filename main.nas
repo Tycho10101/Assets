@@ -15,7 +15,7 @@
 	quit
 
 #update
-	cmd OsUploadScript https://mario-texpack.tycho10101.repl.co/main.nas
+	cmd OsUploadScript https://tycho10101.github.io/Assets/main.nas
 	quit
 
 #askmodel

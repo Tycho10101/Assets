@@ -104,7 +104,7 @@
 	quit
 
 #update
-	cmd OsUploadScript https://mario-texpack.tycho10101.repl.co/mkcc.nas
+	cmd OsUploadScript https://tycho10101.github.io/Assets/mkcc.nas
 	quit
 	
 #input
