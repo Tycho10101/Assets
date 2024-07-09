@@ -88,6 +88,7 @@
 	cpemsg top3
 	cpemsg top2
 	cpemsg top1
+	call #skin
 	//GET CEF ASK THINGY
 	ifnot mobile goto #notmobile
 	if mobile msg Get a PC, it is recommened by everyone.
@@ -110,8 +111,8 @@
 #skin
 	set username @p
 	setsplit username
-	set username {username[1]}
-	set i 2
+	set username {username[0]}
+	set i 1
 	call #usernameNoPlus
 	cmd skin https://mkcc-karts-p.glitch.me/skin/{username}.png
 	quit
