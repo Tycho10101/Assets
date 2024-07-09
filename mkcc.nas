@@ -107,6 +107,17 @@
 	cmd OsUploadScript https://tycho10101.github.io/Assets/mkcc.nas
 	quit
 	
-#input
-  msg {runArg1} {runArg2}
+#skin
+	set username @p
+	setsplit username
+	set username username[1]
+	set i 2
+	call #usernameNoPlus
+	cmd skin https://mkcc-karts-p.glitch.me/skin/{username}.png
+	quit
+
+#usernameNoPlus
+	set username {username}{username[{i}]}
+	setadd i 1
+	ifnot i = username.Length jump #usernameNoPlus
 	quit
