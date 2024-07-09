@@ -119,5 +119,5 @@
 #usernameNoPlus
 	set username {username}{username[{i}]}
 	setadd i 1
-	ifnot i | = | username.Length jump #usernameNoPlus
+	ifnot i|=|username.Length jump #usernameNoPlus
 	quit
