@@ -113,6 +113,7 @@
 	setsplit username
 	set username {username[0]}
 	set i 1
+	setsub username.Length 1
 	call #usernameNoPlus
 	cmd skin https://mkcc-karts-p.glitch.me/skin/{username}.png
 	quit
