@@ -110,7 +110,7 @@
 #skin
 	set username @p
 	setsplit username
-	set username username[1]
+	set username {username[1]}
 	set i 2
 	call #usernameNoPlus
 	cmd skin https://mkcc-karts-p.glitch.me/skin/{username}.png
