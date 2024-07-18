@@ -1,5 +1,7 @@
 #start
-  set coursename {runArg1}
+	unfreeze
+	model polarite+kart
+	set coursename {runArg1}
 	freeze
 	cpemsg bigannounce %43
 	delay 1000
@@ -79,7 +81,8 @@
 #reset
 	//Actual Reset
 	set assetUrl https://tycho10101.github.io/Assets/
-	cmd tp 8 1 2 180 0
+	cmd tp 23 4 0 180 0
+	freeze
 	set lapcount 0 
 	set lapskip 1
 	set lapstart 0
@@ -91,14 +94,19 @@
 	cpemsg top1
 	if cef msg Map theme:%7 {assetUrl}Cups-Mario-Kart-CC.mp3
 	call #skin
+	cmd model 0
+	cmd tempbot add Kart 23 3.5 4.5 0 0 https://mkcc-karts-p.glitch.me/skin/{username}.png empty
+	cmd tempbot model Kart polarite+kart
 	//GET CEF ASK THINGY
-	ifnot mobile goto #notmobile
+	ifnot mobile call #notmobile
 	if mobile msg Get a PC, it is recommened by everyone.
+	reply 1|Mushroom Cup|#mcup
+    reply 2|FireFlower Cup|#ffcup
 	quit 
 	
 #notmobile
 	if webclient msg Download the ClassiCube Client, it is recommended by your dentist. ( https://classicube.net/ )
-	ifnot webclient goto #canhavecef
+	ifnot webclient call #canhavecef
 	quit
 	
 #canhavecef
