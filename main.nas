@@ -1,3 +1,5 @@
+using cef
+
 #cefsecret
 	if cef goto #cefsecretwithcef
 	ifnot cef msg %4ERROR: CEF REQUIRED ( https://github.com/SpiralP/classicube-cef-loader-plugin )
@@ -7,7 +9,6 @@
 	msg %2POWERING ON
 	tempblock 0 37 67 115
 	msg cef create https://Tycho10101.github.io/
-	delay 1000
 	msg cef at 37 67 115 90 0 0.375
 	quit
 
