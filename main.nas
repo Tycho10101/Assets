@@ -4,7 +4,7 @@ using cef
 	if cef goto #cefsecretwithcef
 	ifnot cef msg %4ERROR: CEF REQUIRED ( https://github.com/SpiralP/classicube-cef-loader-plugin )
 	quit
-
+	
 #cefsecretwithcef
 	msg %2POWERING ON
 	tempblock 0 37 67 115
