@@ -78,6 +78,7 @@
 	
 #reset
 	//Actual Reset
+	set assetUrl https://tycho10101.github.io/Assets/
 	cmd tp 8 1 2 180 0
 	set lapcount 0 
 	set lapskip 1
@@ -88,6 +89,7 @@
 	cpemsg top3
 	cpemsg top2
 	cpemsg top1
+	if cef msg Map theme:%7 {assetUrl}Cups-Mario-Kart-CC.mp3
 	call #skin
 	//GET CEF ASK THINGY
 	ifnot mobile goto #notmobile
