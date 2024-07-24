@@ -95,7 +95,7 @@
 	if cef msg Map theme:%7 {assetUrl}Cups-Mario-Kart-CC.mp3
 	call #skin
 	cmd model 0
-	cmd tempbot add Kart 23 3.5 4.5 0 0 https://mkcc-karts-p.glitch.me/skin/{username}.png empty
+	cmd tempbot add Kart 23 3.5 3.5 0 0 https://mkcc-karts-p.glitch.me/skin/{username}.png empty
 	cmd tempbot model Kart polarite+kart
 	//GET CEF ASK THINGY
 	ifnot mobile call #notmobile
