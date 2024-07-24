@@ -1,6 +1,6 @@
 #start
 	unfreeze
-	model polarite+kart
+	cmd model polarite+kart
 	set coursename {runArg1}
 	freeze
 	cpemsg bigannounce %43
